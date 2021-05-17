@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>DEI TA Max v1</title>
+</head>
+
+<body>
+  <header>
+    <a id="login_button" href="login_page.html"><img src="Images/login_icon.png" id="login_icon" alt="login icon"></a>
+    <a href="index.html" id="home_button"> <img src="Images/logo.png" id="logo" alt="Dei ta logo"></a>
+    <div id="menu_button_container">
+      <div id="menu_button">
+        <div onclick="open_close_menu()" class="menu_button_bar"></div>
+        <div onclick="open_close_menu()" class="menu_button_bar"></div>
+        <div onclick="open_close_menu()" class="menu_button_bar"></div>
+      </div>
+    </div>
+    <div id="menu_content_desktop">
+      <a href="index.html">DEI TA Products</a>
+      <a href="support_page.html">Support</a>
+      <a href="contacts_page.html">Contacts</a>
+    </div>
+  </header>
+
+  <div id="menu_content_mobile">
+    <a href="index.html">DEI TA Products</a>
+    <a href="support_page.html">Support</a>
+    <a href="contacts_page.html">Contacts</a>
+  </div>
+
+  <h1 class="heading">Pre-order</h1>
+
+  <div class="costs_containeer">
+    <p class="names_of_costs"> DEI TA Max v1 <br> Shipping </p>
+    <div class="line">
+      <hr><br>
+      <hr>
+    </div>
+    <p class="costs"> £599 <br> Free </p>
+  </div>
+
+  <p class="shipping_date"> The product will be shiped no later than 10/06/2021</p>
+
+  <form class="pre-order">
+    <h3 class="heading_3">YOUR DETAILS</h3>
+    <input class="input_field_1" spellcheck="false" type="text" name="first_name" placeholder="First name" required>
+    <input class="input_field_1" spellcheck="false" type="text" name="last_name" placeholder="Last name" required>
+    <input class="input_field_1" spellcheck="false" type="text" name="phone_number" placeholder="Phone number" required>
+    <input class="input_field_1" spellcheck="false" type="text" name="email_address" placeholder="Email address" required>
+    <h3 class="heading_3">SHIPPING ADDRESS</h3>
+    <input class="input_field_1" spellcheck="false" type="text" name="address_line 1" placeholder="Address line 1" required>
+    <input class="input_field_1" spellcheck="false" type="text" name="address_line 2" placeholder="Address line 2" required>
+    <input class="input_field_1" spellcheck="false" type="text" name="city" placeholder="City" required>
+    <input class="input_field_1" spellcheck="false" type="text" name="county" placeholder="County" required>
+    <input class="input_field_1" spellcheck="false" type="text" name="post_code" placeholder="Post code" required>
+    <input class="input_field_1" spellcheck="false" type="text" name="county" placeholder="Country" required>
+    <input class="input_field_4" type="number" name="card_number" placeholder="Card number" required>
+    <div class="card_details_container">
+      <div class="exp_date_container">
+        <input class="input_field_2" id="expiration_date" type="month" name="exp_date" min="2021-05" required><br>
+        <label class="exp_date" for="expiration_date">EXP date</label>
+      </div>
+      <input class="input_field_3" type="number" name="cvv" placeholder="CVV" required>
+    </div>
+    <p class="pre-ordering_terms">By pre-ordering you accept the pre-order agreement <br>
+      <span class="text_style_1"> View pre-order agreement </span>
+    </p>
+    <button class="pre-order_button" type="submit" name="button">PRE-ORDER</button>
+  </form>
+
+  <div class="footer">
+    <a href="contacts_page.html">Contacts</a>
+    <a href="pre_order_page.html">Privacy policy</a>
+    <a href="pre_order_page.html">T&C</a>
+    <p class="footer_date">Copyright © 2021 DEI TA</p>
+  </div>
+
+  <script>
+
+    /* a function for opening or closing the mobile menu */
+
+    open_close_menu = () => {
+      if (document.getElementById('menu_content_mobile').style.display === "flex") {
+        document.getElementById('menu_content_mobile').style.display = "none";
+      } else {
+        document.getElementById('menu_content_mobile').style.display = "flex";
+      }
+    }
+
+  </script>
+</body>
+
+</html>
